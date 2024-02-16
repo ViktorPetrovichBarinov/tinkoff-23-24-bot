@@ -11,11 +11,9 @@ import java.util.HashMap;
 
 public class TgBot {
     private final TelegramBot bot;
-    private final String token;
     public final HashMap<Long, User> users = new HashMap<>();
 
     public TgBot(String token) {
-        this.token = token;
         this.bot = new TelegramBot(token);
     }
 
