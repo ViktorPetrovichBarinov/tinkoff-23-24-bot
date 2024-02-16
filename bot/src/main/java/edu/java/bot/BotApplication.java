@@ -1,7 +1,5 @@
 package edu.java.bot;
 
-import com.pengrad.telegrambot.TelegramBot;
-import com.pengrad.telegrambot.UpdatesListener;
 import edu.java.bot.botClass.TgBot;
 import edu.java.bot.configuration.ApplicationConfig;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,8 +20,6 @@ public class BotApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         String token = applicationConfig.telegramToken();
-
-        System.out.println("TOKEN " + token);
 
         TgBot bot = new TgBot(token);
 
