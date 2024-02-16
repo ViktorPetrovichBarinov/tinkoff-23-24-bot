@@ -23,13 +23,9 @@ public class MessageParser {
                     Class<?> currentInterface = Command.class;
                     if (currentInterface.isAssignableFrom(currentClass)) {
                         return (Command) currentClass.getDeclaredConstructor().newInstance();
-                    } else {
-                        throw new ClassNotFoundException();
                     }
-                } catch (ClassNotFoundException e) {
-                } catch (InvocationTargetException | InstantiationException | IllegalAccessException
-                         | NoSuchMethodException e) {
-                    throw new RuntimeException(e);
+                } catch (ClassNotFoundException | InvocationTargetException | InstantiationException |
+                         IllegalAccessException | NoSuchMethodException ignored) {
                 }
             }
         }

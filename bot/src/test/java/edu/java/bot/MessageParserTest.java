@@ -103,4 +103,14 @@ public class MessageParserTest {
 
         assertThat(command).isInstanceOf(MessageParser.parse(given).getClass());
     }
+
+    @Test
+    @DisplayName("Тест сообщение содержащее в себе несуществующие команды")
+    void test8() {
+        String given = "Hello, i'm Russel. /aaaa  How are you?";
+
+        Command command = new Start();
+
+        assertThat(MessageParser.parse(given)).isNull();
+    }
 }
