@@ -43,9 +43,4 @@ public class TgBot {
         long chatId = update.message().chat().id();
         bot.execute(new SendMessage(chatId, message));
     }
-
-    public void stopListener() {
-        bot.removeGetUpdatesListener();
-    }
-
 }
