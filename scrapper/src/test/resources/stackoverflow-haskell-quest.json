@@ -1,0 +1,33 @@
+{
+  "items": [
+    {
+      "tags": [
+        "haskell"
+      ],
+      "owner": {
+        "account_id": 14295498,
+        "reputation": 33,
+        "user_id": 10326304,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/0070e75eb712e81274d814c5bea4a759?s=256&d=identicon&r=PG&f=y&so-version=2",
+        "display_name": "H. Dong",
+        "link": "https://stackoverflow.com/users/10326304/h-dong"
+      },
+      "is_answered": true,
+      "view_count": 2530,
+      "accepted_answer_id": 52349907,
+      "answer_count": 2,
+      "score": 3,
+      "last_activity_date": 1537102584,
+      "creation_date": 1537055761,
+      "last_edit_date": 1537056729,
+      "question_id": 52349820,
+      "content_license": "CC BY-SA 4.0",
+      "link": "https://stackoverflow.com/questions/52349820/how-to-write-haskell-function-with-no-parameter",
+      "title": "How to write Haskell function with no parameter?"
+    }
+  ],
+  "has_more": false,
+  "quota_max": 300,
+  "quota_remaining": 293
+}
