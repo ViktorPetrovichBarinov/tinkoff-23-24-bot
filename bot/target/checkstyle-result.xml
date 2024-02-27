@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="10.12.7">
+<file name="/home/ruslan/IdeaProjects/tinkoff-23-24-bot/bot/src/main/java/edu/java/bot/MessageParser.java">
+<error line="6" column="1" severity="warning" message="Private ctor in non-final class. Inspect the code and make sure its intended." source="com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck"/>
+</file>
+<file name="/home/ruslan/IdeaProjects/tinkoff-23-24-bot/bot/src/main/java/edu/java/bot/botClass/TgBot.java">
+</file>
+</checkstyle>
