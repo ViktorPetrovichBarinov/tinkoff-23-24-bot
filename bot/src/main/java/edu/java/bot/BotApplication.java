@@ -13,7 +13,7 @@ public class BotApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(BotApplication.class, args);
-        TgBot bot = new TgBot("6918381858:AAEXd5FklSbMO8cu-4Rhw9V3oYbHuIQCfGM");
+        TgBot bot = new TgBot("TOKEN");
         bot.start();
     }
 
