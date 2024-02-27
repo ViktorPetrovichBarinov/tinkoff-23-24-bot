@@ -9,9 +9,11 @@ public class List implements Command {
         StringBuilder sb = new StringBuilder();
         Long id = update.message().from().id();
         if (bot.users.containsKey(id)) {
-            for (String link : bot.users.get(id).links()) {
-                sb.append(link + "\n");
+            java.util.List<String> links = bot.users.get(id).links();
+            for (int i = 0; i < links.size(); i++) {
+                sb.append(Integer.valueOf(i + 1).toString()).append(". ").append(links.get(i)).append("\n");
             }
+
             if (sb.isEmpty()) {
                 bot.sendMessage(update, "You haven't any link to tracking");
             }
