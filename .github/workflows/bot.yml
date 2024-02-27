@@ -1,3 +1,4 @@
+
 name: Bot Build
 
 on:
@@ -62,5 +63,6 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
           cache: maven
+
 
       - run: mvn -pl bot -am verify -Dskip.unit.tests=true
