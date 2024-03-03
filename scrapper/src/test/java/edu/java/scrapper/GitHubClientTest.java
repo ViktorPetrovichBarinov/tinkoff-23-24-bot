@@ -46,7 +46,7 @@ public class GitHubClientTest {
 
 
     @Test
-    @DisplayName("My tinkoff java second sem repository")
+    @DisplayName("test data - tink_java_second_sem.json")
     public void test1() throws IOException {
         // Настройка эмуляции ответа от GitHub API
         this.wireMockServer.stubFor(get(urlEqualTo("/repos/ViktorPetrovichBarinov/tinkoff-23-24-second-sem"))

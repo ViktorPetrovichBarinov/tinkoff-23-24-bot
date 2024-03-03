@@ -46,7 +46,7 @@ public class StackOverflowClientTest {
 
 
     @Test
-    @DisplayName("My tinkoff java second sem repository")
+    @DisplayName("test data - stackoverflow-haskell-quest.json")
     public void test1() throws IOException {
         // Настройка эмуляции ответа от GitHub API
         this.wireMockServer.stubFor(get(urlEqualTo("/questions/52349820?site=stackoverflow"))
